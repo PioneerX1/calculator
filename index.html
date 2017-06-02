@@ -9,8 +9,56 @@
   </head>
   <body>
     <div class="container">
-      
+      <h1>Mick's Exciting Futuristic Calculator</h1>
+      <h3>Type operands and select one operator to receive your result!</h3>
 
+      <form id="form">
+        <div class="form-group">
+          <label for="number1">Number 1: </label>
+          <input id="number1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="number2">Number 2: </label>
+          <input id="number2" class="form-control" type="text">
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="add">
+            Add +
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="subtract">
+            Subtract -
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="multiply">
+            Multiply *
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="divide">
+            Divide /
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="remainder">
+            Find Remainder %
+          </label>
+        </div>
+
+        <button type="submit" class="btn">Calculate!</button>
+      </form>
+
+      <div id="result">
+        <h3><span num1></span> <span op></span> <span num2></span> = <span num3></h3>
+      </div>
     </div>
   </body>
 </html>
